@@ -1,0 +1,31 @@
+{
+  "name": "dianetica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://heitor_pedroso@bitbucket.org/heitor_pedroso/wp-developer-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/heitor_pedroso/wp-developer-theme#readme",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-css": "^0.1.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-sass": "^2.2.0",
+    "jeet": "^6.1.2",
+    "jshint": "^2.9.1",
+    "rupture": "^0.6.1"
+  }
+}
