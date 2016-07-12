@@ -19,7 +19,7 @@ wp_head();
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="shortcut icon" href="<?php bloginfo('template_url')?>/img/favicon.ico" />
 </head>
-<body <?php echo $body_class; ?>>
+<body <?php body_class(); ?>>
 <header>
   <!-- Menu Primary with Bootstrap -->
     <nav class="collapse navbar-collapse bs-navbar-collapse">
