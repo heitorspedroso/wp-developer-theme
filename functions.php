@@ -7,9 +7,6 @@
  * @since Wp developer Theme 1.0
  */
 
-//DEFINE JQUERY
-wp_enqueue_script("jquery");
-
 //DEFINE PATH
 define( 'PATH', get_template_directory() . '/' );
 
