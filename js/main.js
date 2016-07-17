@@ -1,3 +1,3 @@
-$(document).ready(function(){
-  
+jQuery(document).ready(function(){
+  //Include the scripts
 });
