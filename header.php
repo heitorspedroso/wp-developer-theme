@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="shortcut icon" href="<?php bloginfo('template_url')?>/img/favicon.ico" />
+    <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
