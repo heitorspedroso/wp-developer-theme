@@ -27,7 +27,7 @@
         <?php wp_nav_menu( array(
             'theme_location' => 'primary',
             'menu_id' => 'primary-menu',
-            'menu_class' => 'nav navbar-nav',
+            'menu_class' => 'nav navbar-nav',//or fluid: .nav-justified
             'container'       => false,
             'items_wrap'      => '<ul id="%1$s" class="%2$s nav">%3$s</ul>',
             'walker'          => new wp_bootstrap_navwalker
