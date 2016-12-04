@@ -12,15 +12,15 @@ show_admin_bar(false);
 add_theme_support( 'post-thumbnails' );
 
 //Register Widget Default
-function wp_developer_theme_widget_init() {
-    register_sidebar( array(
-        'name'          => __( 'Sidebar', 'Default' ),
-        'id'            => 'sidebar-1',
-        'description'   => '',
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</aside>',
-        'before_title'  => '<h1 class="widget-title">',
-        'after_title'   => '</h1>',
-    ) );
+function wp_developer_theme_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Sidebar', 'wp-developer-theme' ),
+		'id'            => 'sidebar-1',
+		'description'   => __( ''),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
-add_action( 'widgets_init', 'wp_developer_theme_widget_init' );
+add_action( 'widgets_init', 'wp_developer_theme_widgets_init' );
