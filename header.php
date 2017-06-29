@@ -1,14 +1,8 @@
-<?php
-/*
-  WPDEVELOPERTHEME HELP: BOOSTRAP EXAMPLE
-  <div class="container"> or container-fluid
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-        </div>
-    </div>
-  </div>
-*/
+<!--
+  ***
+  * WPDEVELOPERTHEME 
+  ***
+-->
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -18,7 +12,6 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="shortcut icon" href="<?php bloginfo('template_url')?>/img/favicon.ico" />
     <title><?php wp_title(); ?></title>
-    <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
