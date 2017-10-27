@@ -26,4 +26,4 @@ require_once INC . 'theme_functions.php';
 require_once INC . 'twitter_bootstrap_nav_walker.php';
 
 //Disable Editor of file for Security
-define( ‘DISALLOW_FILE_EDIT’, true );
+define( 'DISALLOW_FILE_EDIT', true );
