@@ -27,3 +27,6 @@ require_once INC . 'twitter_bootstrap_nav_walker.php';
 
 //Disable Editor of file for Security
 define( 'DISALLOW_FILE_EDIT', true );
+
+//Disable Print Wordpress Version for Security
+remove_action('wp_head', 'wp_generator');
