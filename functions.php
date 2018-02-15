@@ -30,3 +30,15 @@ define( 'DISALLOW_FILE_EDIT', true );
 
 //Disable Print Wordpress Version for Security
 remove_action('wp_head', 'wp_generator');
+
+//Insert Generic Login and Password for Security
+function generic_error_msgs()
+{ 
+   //insert how many msgs you want as an array item. it will be shown randomly 
+	$custom_error_msgs = array(
+		'Login e/ou senha inválido',
+	);
+  //get random array item to show
+	return $custom_error_msgs[array_rand($custom_error_msgs)];;
+}
+add_filter('login_errors', 'generic_error_msgs');
