@@ -22,7 +22,7 @@ This theme is designed to be a quick tool in the developer's hand through it the
 (if the YOAST SEO plugin is not enabled, you will have no problem in your theme, just will not show up)
 
 
-## Best Pratices for the theme
+## Best Pratices for this theme
 
 ### GULP
 > 1. Install with comands: npm install gulp / npm install gulp-sass / npm install gulp-rename
@@ -52,7 +52,7 @@ This theme is designed to be a quick tool in the developer's hand through it the
     ?>
 ```
 
-### CALL FOR JS FILES
+### JS FILES CALLS
 > 1. The JS file other than CSS, instead separating into multiple files, maintain the file structure 'main.js' by firing functions according to the body class you need
 > 2. If you need to import another JS file, import using conditions, as in CSS, in the file '/inc/enqueues.php'
 > 3. DO NOT CARE ANY OTHER FILE JS WITHOUT BEING THROUGH THIS PATH
