@@ -2,13 +2,13 @@
 
 *Version 2.0 - WITH GULP*
 
-*Description English*
-
-This theme is designed to be a quick tool in the developer's hand through it the developer can now create the theme without worrying about the file structure that is ready and pre-defined loops without influence in html / css
-
 *Descrição Português*
 
-Esse Tema foi desenvolvido para ser uma ferramenta rápida na mão do desenvolvedor, através dele o desenvolvedor já pode criar o tema sem se preocupar com a estrutura de arquivos que já está pronta e com loops pré-definidos sem influencia em html/css/
+Esse Tema foi desenvolvido para ser uma ferramenta rápida na mão do desenvolvedor, através dele o desenvolvedor já pode criar o tema sem se preocupar com a estrutura de arquivos que já está pronta e com loops pré-definidos sem influencia em html e pouca influência em css
+
+*Description English*
+
+This theme is designed to be a quick tool in the developer's hand through it the developer can now create the theme without worrying about the file structure that is ready and pre-defined loops without influence in html and little influence on CSS
 
 *Addons*
 
@@ -35,18 +35,20 @@ Esse Tema foi desenvolvido para ser uma ferramenta rápida na mão do desenvolve
 > 2.  Example THAT IS ALREADY IN THE FILE '/inc/enqueues.php' and it should be used:
 ```sh
     <?php
-        wp_enqueue_style('styles-common', get_template_directory_uri() . '/assets/css/style-common.min.css', '', '1.0.0');
-        
-        //conditional styles
-        if (is_page() || is_404() || is_search()) {
-            wp_enqueue_style('styles-page', get_template_directory_uri() . '/assets/css/style-page.min.css', '', '1.1.1');
+        function wp_developer_theme_styles(){
+            wp_enqueue_style('styles-reset', get_template_directory_uri() . '/assets/css/reset.min.css', '', '1.0');
+            wp_enqueue_style('styles-bootstrap-grid', get_template_directory_uri() . '/assets/css/bootstrap-grid.min.css', '', '1.0');
+            wp_enqueue_style( 'styles-theme',  get_template_directory_uri() . '/style.css', '','1.0');
+            wp_enqueue_style('styles-common', get_template_directory_uri() . '/assets/css/style-common.min.css', '', '1.0.0');
+            //conditional styles
+            if (is_page() || is_404() || is_search()) {
+            }
+            if (is_front_page()) {
+            }
+            if (is_single()) {
+            }
         }
-        if(is_front_page()){
-            wp_enqueue_style( 'styles-home',  get_template_directory_uri() . '/assets/css/style-home.min.css', '','1.0');
-        }
-        if(is_single()){
-            wp_enqueue_style( 'styles-product-single',  get_template_directory_uri() . '/assets/css/style-single.min.css', '','1.0');
-        }
+        add_action( 'wp_enqueue_scripts', 'wp_developer_theme_styles' );
     ?>
 ```
 
@@ -61,7 +63,6 @@ Esse Tema foi desenvolvido para ser uma ferramenta rápida na mão do desenvolve
     //Include the enqueue footer SCRIPTS
     function wp_developer_theme_scripts(){
         wp_enqueue_script('jquery');
-        // wp_enqueue_script( 'bootstrap-script','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js','','',true);
         wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', '', '1.0',true);
     }
     add_action( 'wp_enqueue_scripts', 'wp_developer_theme_scripts' );
