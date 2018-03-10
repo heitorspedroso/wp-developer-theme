@@ -22,7 +22,7 @@ This theme is designed to be a quick tool in the developer's hand through it the
 (if the YOAST SEO plugin is not enabled, you will have no problem in your theme, just will not show up)
 
 
-<b>Best Pratices for the theme</b>
+## Best Pratices for the theme
 
 ### GULP
 > 1. Install with comands: npm install gulp / npm install gulp-sass / npm install gulp-rename
