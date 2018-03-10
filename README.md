@@ -1,36 +1,36 @@
 # WP Developer Theme - WordPress #
 
-*Version 2.0 - WITH GULP*
+## Version 2.0 - WITH GULP
 
-*Descrição Português*
-
+<b>Descrição em Português</b>
 Esse Tema foi desenvolvido para ser uma ferramenta rápida na mão do desenvolvedor, através dele o desenvolvedor já pode criar o tema sem se preocupar com a estrutura de arquivos que já está pronta e com loops pré-definidos sem influencia em html e pouca influência em css
 
-*Description English*
-
+<b>Description in English</b>
 This theme is designed to be a quick tool in the developer's hand through it the developer can now create the theme without worrying about the file structure that is ready and pre-defined loops without influence in html and little influence on CSS
 
-*Addons*
 
-<b>RESET CSS (a reset in css to have no differences between browsers)</b>
+<b>Addons</b>
+
+*RESET CSS (a reset in css to have no differences between browsers)*
 - RESET CSS -> declared in /inc/enqueues.php
 
-<b>Bootstrap GRID (a bootstrap grid-only version)</b>
+*Bootstrap GRID (a bootstrap grid-only version)*
 - Bootstrap GRID CSS -> declared in /inc/enqueues.php
 
-<b>Yoast SEO Breadcrumb (https://yoast.com/wordpress/plugins/breadcrumbs/)</b>
+*Yoast SEO Breadcrumb (https://yoast.com/wordpress/plugins/breadcrumbs/)*
 - Breadcrumb -> declared in archive.php | taxonomy.php | category.php | page.php | single.php
 (if the YOAST SEO plugin is not enabled, you will have no problem in your theme, just will not show up)
 
-*Best Pratices for the theme*
 
-###GULP
+<b>Best Pratices for the theme</b>
+
+### GULP
 > 1. Install with comands: npm install gulp / npm install gulp-sass / npm install gulp-rename
 > 2. Run in the root folder of theme: gulp
 > 3. After run gulp: an already mined css file will be saved in /wp-developer-theme/assets/css/
 > 4. A query-only file CSS will be saved in /wp-developer-theme/css-dev/
 
-###CSS FILES CALLS
+### CSS FILES CALLS
 > 1. Always try to individualize the css files for better maintenance in the future using the 'conditional styles' of the file 'enqueues.php'
 > 2.  Example THAT IS ALREADY IN THE FILE '/inc/enqueues.php' and it should be used:
 ```sh
