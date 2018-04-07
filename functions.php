@@ -39,6 +39,6 @@ function generic_error_msgs()
 		'Login e/ou senha inválido',
 	);
   //get random array item to show
-	return $custom_error_msgs[array_rand($custom_error_msgs)];;
+	return $custom_error_msgs[array_rand($custom_error_msgs)];
 }
 add_filter('login_errors', 'generic_error_msgs');
