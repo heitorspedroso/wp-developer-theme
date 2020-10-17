@@ -14,6 +14,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 <header>
   <!-- Menu Primary with Bootstrap -->
     <nav class="collapse navbar-collapse bs-navbar-collapse">
