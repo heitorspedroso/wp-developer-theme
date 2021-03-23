@@ -50,10 +50,12 @@ $comment_count = get_comments_number();
                 'mid_size'           => 0,
                 'prev_text'          => sprintf(
                     '%s <span class="nav-prev-text">%s</span>',
+                    '',
                     esc_html__( 'Older comments', 'wp-developer-theme' )
                 ),
                 'next_text'          => sprintf(
                     '<span class="nav-next-text">%s</span> %s',
+                    '',
                     esc_html__( 'Newer comments', 'wp-developer-theme' )
                 ),
             )
